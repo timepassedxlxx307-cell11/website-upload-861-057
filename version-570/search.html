@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索 - 久久在线</title>
+  <meta name="description" content="久久在线搜索页，快速查找国产短剧、免费短剧、都市古装甜宠等热门影视内容。">
+  <meta name="keywords" content="国产短剧,免费短剧,都市短剧,古装短剧,甜宠短剧,短剧资源,在线观看,每日更新,热门题材,追剧">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="./index.html" aria-label="久久在线">
+      <span class="brand-mark">▶</span>
+      <span class="brand-text">久久在线</span>
+    </a>
+    <button class="menu-button js-menu-button" type="button" aria-label="打开导航">☰</button>
+    <nav class="site-nav js-site-nav">
+      <a class="nav-link" href="./index.html">首页</a>
+      <a class="nav-link" href="./movies.html">全部影视</a>
+      <a class="nav-link" href="./categories.html">分类浏览</a>
+      <a class="nav-link" href="./ranking.html">热播排行</a>
+      <div class="nav-dropdown">
+        <button type="button">题材</button>
+        <div class="nav-menu">
+          <a href="./category-daily-picks.html">每日精选</a>
+          <a href="./category-urban-romance.html">都市甜宠</a>
+          <a href="./category-costume-legend.html">古装传奇</a>
+          <a href="./category-suspense-crime.html">悬疑犯罪</a>
+          <a href="./category-action-adventure.html">动作冒险</a>
+          <a href="./category-comedy-life.html">喜剧生活</a>
+        </div>
+      </div>
+    </nav>
+    <form class="header-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索短剧、影片、题材" autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</header>
+<main class="page-main">
+  <section class="page-hero small-hero">
+    <div class="container">
+      <div class="eyebrow">搜索</div>
+      <h1>搜索影视内容</h1>
+      <p>输入片名、地区、年份、类型或标签，快速找到想看的内容。</p>
+      <form class="search-page-form" action="./search.html" method="get">
+        <input class="js-search-input" type="search" name="q" placeholder="搜索短剧、影片、题材" autocomplete="off">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="movie-grid js-search-results"></div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <strong>久久在线</strong>
+      <p>精选国产免费短剧资源，涵盖都市、古装、甜宠等热门题材，每日更新，满足你的追剧需求！</p>
+    </div>
+    <div class="footer-links">
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类</a>
+      <a href="./ranking.html">排行</a>
+      <a href="./movies.html">全部影视</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 久久在线</div>
+</footer>
+<script src="./assets/search-index.js"></script>
+<script src="./assets/main.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
